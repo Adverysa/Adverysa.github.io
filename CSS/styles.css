@@ -78,6 +78,10 @@ fieldset {
     margin-right: 80%;
 }
 
+textarea {
+    resize: none;
+}
+
 .aboveform {
     font-size: 20px;
 }
