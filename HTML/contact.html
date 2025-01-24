@@ -2,6 +2,7 @@
 <html lang="en">
 <meta name="viewport" content="widthe=device-width, initial-scale=1">
 <link rel="stylesheet" href="/CSS/styles.css">
+<link rel="icon" type="image/x-icon" href="/Images/logo1.jpg">
 <head>
     <title>Contact Us</title>
 </head>
@@ -20,13 +21,12 @@
 
 
 <script>"centralisefiller()"</script>
-
-<p>To contact us directly, please fill the below form in as much detail as possible:</p>
-<form name="contactform" id="contactform" auto-complete="on">
-    
+<form name="contactform" id="contactform" auto-complete="on" class="form">
+    <fieldset>
+        <legend class="aboveform">Send us a message</legend>
     <label for="topic">Query topic:</label>
     <select id="query" name="query" onchange="otherselectfunction()" required>
-        <option value="" class="fillerchoice">- Topic -</option>
+        <option value="">- Topic -</option>
         <option value="commission">Commissions</option>
         <option value="purchase">Purchase</option>
         <option value="tracking">Order tracking</option>
@@ -37,7 +37,7 @@
     
         <label for="title">Title:</label>
         <select id="title" name="title" required>
-            <option value="" class="fillerchoice">- Title -</option>
+            <option value="">- Title -</option>
             <option value="Mr">Mr</option>
             <option value="Mrs">Mrs</option>
             <option value="Miss">Miss</option>
@@ -46,15 +46,15 @@
             <option value="prefer not to say">Prefer not to say</option>
         </select><br>
     
-    <label for="fname">First name:</label>
-    <input type="text" id="fname" name="fname" placeholder="First name" required><br>
+    <label for="fname">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Name" required><br>
     <label for="email address"?=>Email address:</label>
     <input type="email" id="email" name="email address" placeholder="Email address" required><br>
     <label for="details">Message:</label><br>
     <textarea id="details" name="details" rows="10" cols="31" placeholder="Enter message here" required></textarea><br>
     <button onclick="validateform()" id="submitbutton" title="Submit form">Submit</button>
     <input type="reset" value="Clear" title="Clear form" onclick="resetother()">
-
+</fieldset>
 </form>
 </body>
 <script src="/JS/code.js"></script>

@@ -6,6 +6,7 @@ body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20;
+    background-color: #F1F1F1;
 }
 
 /*Top navigation bar formatting*/
@@ -72,9 +73,15 @@ body {
     font-size: 30px;
 }
 
-option.fillerchoice {
-    text-align: center;
+/*Form page styling*/
+fieldset {
+    margin-right: 80%;
 }
+
+.aboveform {
+    font-size: 20px;
+}
+
 
 /*Scroll button formatting*/
 #scrolltotopbutton {
