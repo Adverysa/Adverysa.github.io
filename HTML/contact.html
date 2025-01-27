@@ -5,7 +5,8 @@
 
 <head>
     <title>Contact Us</title>
-    <meta name="viewport" content="widthe=device-width, initial-scale=1"> <!-- Sets the viewport to the device width, to ensure page looks good on all devices -->  
+    <meta name="viewport" content="widthe=device-width, initial-scale=1">
+    <!-- Sets the viewport to the device width, to ensure page looks good on all devices -->
 </head>
 
 <body>
@@ -14,28 +15,15 @@
         <a href="/HTML/about.html">About</a>
         <a href="/HTML/gallery.html">Gallery</a>
         <a class="active" href="">Contact Us</a>
-        <a href="javascript:void(0);" class="icon" onclick="resizefunction()"> <!-- Adds the three line icon as a button, and sets the function it runs on click -->
+        <a href="javascript:void(0);" class="icon" onclick="resizefunction()">
+            <!-- Adds the three line icon as a button, and sets the function it runs on click -->
             <i class="fa fa-bars"></i>
         </a>
-
     </div>
 
+    <form class="contactform" name="contactform" id="contactform" auto-complete="on" class="form">
 
-    <script>"centralisefiller()"</script>
-    <form name="contactform" id="contactform" auto-complete="on" class="form">
         <fieldset>
-            <legend class="aboveform">Send us a message</legend>
-            <label for="topic">Query topic:</label>
-            <select id="query" name="query" onchange="otherselectfunction()" required>
-                <option value="">- Topic -</option>
-                <option value="commission">Commissions</option>
-                <option value="purchase">Purchase</option>
-                <option value="tracking">Order tracking</option>
-                <option value="other">Other</option>
-            </select><br>
-
-            <div id="otherinfo" style="visibility: hidden;">Other: <input id="otherbox1" name="otherfield"
-                    type="text"></input></div>
 
             <label for="title">Title:</label>
             <select id="title" name="title" required>
@@ -48,18 +36,33 @@
                 <option value="prefer not to say">Prefer not to say</option>
             </select><br>
 
-            <label for="fname">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Name" required><br>
+            <legend class="aboveform">Send us a message</legend>
+            <label for="topic">Query topic:</label>
+            <select id="query" name="query" onchange="otherselectfunction()" required>
+                <option value="">- Topic -</option>
+                <option value="commission">Commissions</option>
+                <option value="purchase">Purchase</option>
+                <option value="packages">Packages</option>
+                <option value="other">Other</option>
+            </select><br>
+
+            <div id="otherinfo" style="display: none;">Topic: <input id="otherbox1" name="otherfield" type="text"
+                    placeholder="Type a subject"></input></div>
+
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
             <label for="email address" ?=>Email address:</label>
-            <input type="email" id="email" name="email address" placeholder="Email address" required><br>
+            <input type="email" id="email" name="email address" placeholder="your@email.com" required><br>
             <label for="details">Message:</label><br>
             <textarea id="details" name="details" rows="10" cols="31" placeholder="Enter message here"
                 required></textarea><br>
-            <button onclick="validateform()" id="submitbutton" title="Submit form">Submit</button>
+            <button id="submitbutton" title="Submit form">Submit</button>
             <input type="reset" value="Clear" title="Clear form" onclick="resetother()">
         </fieldset>
     </form>
 </body>
 <script src="/JS/code.js"></script> <!-- Imports JS file to centralise JS code -->
-<script src="/JS/formcode.js"></script> <!-- Imports JS file for formn -->
+<script src="/JS/formcode.js"></script> <!-- Imports JS file for form -->
+
 </html>

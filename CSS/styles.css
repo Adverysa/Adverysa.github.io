@@ -7,6 +7,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     background-color: #F1F1F1; /*Set the background color to a slight shade of greay to ease reading*/
+    display: flex;
 }
 
 /*Top navigation bar formatting*/
@@ -70,17 +71,24 @@ body {
     text-decoration-line: underline;
     font-weight: bold;
     font-size: 30px;
+    align-items: rows;
 }
 
 /*Form page styling*/
 fieldset {
     margin-right: 80%; /*Adds a box around the form*/
+    margin-left: 80%;
+}
+
+.contactform {
+    align-items: center;
+    position: relative;
+    margin-top: 45px;
 }
 
 textarea {
     resize: none; /*Stops the user resizing the text box*/
 }
-
 
 /*Scroll button formatting*/
 #scrolltotopbutton { /*Formats the button to send user to top of page*/

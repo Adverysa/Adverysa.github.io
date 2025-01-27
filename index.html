@@ -5,23 +5,34 @@
 
 <head>
     <title>Home</title>
-    <meta name="viewport" content="widthe=device-width, initial-scale=1"> <!-- Sets the viewport to the device width, to ensure page looks good on all devices -->
+    <meta name="viewport" content="widthe=device-width, initial-scale=1">
+    <!-- Sets the viewport to the device width, to ensure page looks good on all devices -->
 </head>
 
 <body>
-    <button onclick="scrolltotopfunction()" id="scrolltotopbutton" title="Go to top">^</button> <!-- Adds the button, and specifies the function, to send the user to the top of the page -->
+    <div class="mainbody">
+        <button onclick="scrolltotopfunction()" id="scrolltotopbutton" title="Go to top">^</button>
+        <!-- Adds the button, and specifies the function, to send the user to the top of the page -->
 
-    <div class="topnav" id="topnavbar"> <!-- Initialises the top nav bar -->
-        <a class="active" href="">Home</a>
-        <a href="/HTML/about.html">About</a>
-        <a href="/HTML/gallery.html">Gallery</a>
-        <a href="/HTML/contact.html">Contact Us</a>
-        <a href="javascript:void(0);" class="icon" onclick="resizefunction()"> <!-- Adds the three line icon as a button, and sets the function it runs on click -->
-            <i class="fa fa-bars"></i>
-        </a>
+        <div class="topnav" id="topnavbar"> <!-- Initialises the top nav bar -->
+            <a class="active" href="">Home</a>
+            <a href="/HTML/about.html">About</a>
+            <a href="/HTML/gallery.html">Gallery</a>
+            <a href="/HTML/contact.html">Contact Us</a>
+            <a href="javascript:void(0);" class="icon" onclick="resizefunction()">
+                <!-- Adds the three line icon as a button, and sets the function it runs on click -->
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+        <div class="text" class="WIP">
+            <dive class="WIP">This page is a work in progress.</dive>
+        </div>
     </div>
-    <h1 class="WIP">This page is a work in progress.</h1>
+
+
 </body>
 <script src="/JS/code.js"></script> <!-- Imports JS file to centralise JS code -->
 <script src="/JS/scroll.js"></script> <!-- Imports JS file for scroll button -->
+
 </html>

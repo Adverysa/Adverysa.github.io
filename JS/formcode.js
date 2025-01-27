@@ -3,16 +3,16 @@
 function otherselectfunction() {
     var otherbox = document.getElementById("otherinfo");
     if (document.forms[0].query.options[document.forms[0].query.selectedIndex].value == "other") {
-        otherbox.style.visibility="visible";
+        otherbox.style.display="block";
         document.getElementById("otherbox1").required = true;
     }
     else {
-        otherbox.style.visibility="hidden";
+        otherbox.style.display="none";
     }
 }
 
 //Form other input clear code:
 
 function resetother() {
-    document.getElementById("otherinfo").style.visibility="hidden";1
+    document.getElementById("otherinfo").style.visibility="none";
 }
