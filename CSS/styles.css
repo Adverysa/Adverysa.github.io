@@ -1,58 +1,57 @@
 /*External character sheet imports*/
-@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css); /*Font for 3 lines topnavbar*/
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css); /*Font for the three lines topnavbar icon*/
 
 /*Section formatting*/
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20;
-    background-color: #F1F1F1;
+    font-size: 20px;
+    background-color: #F1F1F1; /*Set the background color to a slight shade of greay to ease reading*/
 }
 
 /*Top navigation bar formatting*/
 .topnav {
-    overflow: hidden;
+    overflow: hidden; /*The content is hidden, but space is not filled by other elements*/
 }
 
-.topnav a {
-   float: left;
+.topnav a { 
+   float: left; /*Sets the bar to start from the left*/
    display: block;
-   color: black;
+   color: black; /*Sets text color for all none active links to black*/
    text-align: center;
    padding: 14px 16px;
-   text-decoration: none;
+   text-decoration: none; /*Specifies that text should be plain*/
    font-size: 20px;
 }
 
 .topnav a:hover {
-    background-color: #c0c0c0;
-    color:black
+    background-color: #c0c0c0; /*Adds a slight grey background when hovered over to show it is hovered over*/
 }
 
-.topnav a.active {
+.topnav a.active { /*Specifies the current page by changing the background color*/
     background-color: blue;
     color: white;
 }
 
-.topnav a.active:hover {
+.topnav a.active:hover { /*Adds a slight grey background when hovered over to show it is hovered over*/
     background-color: #a9a9a8;
     color: black;
 }
 
-.topnav .icon {
+.topnav .icon { /*Hides the three line icon by default*/
     display: none;
 }
 
 @media screen and (max-width: 600px) {
-    .topnav a:not(:first-child) {display: none;}
-    .topnav a.icon {
+    .topnav a:not(:first-child) {display: none;} /*Only shows Home when screen is shrunk*/
+    .topnav a.icon { /*Shows the three line icon when the screen is shrunk*/
         float: right;
         display: block;
     }
 }
 
 @media screen and (max-width: 600px) {
-    .topnav.responsive {position: relative;}
+    .topnav.responsive {position: relative;} /*Hides the three line icon when the dropdown is shown*/
     .topnav.responsive .icon {
         position: absolute;
         right: 0;
@@ -66,7 +65,7 @@ body {
 }
 
 /*Text class formatting*/
-.WIP {
+.WIP { /*Used to signify that a page is not finished*/
     color: red;
     text-decoration-line: underline;
     font-weight: bold;
@@ -75,25 +74,21 @@ body {
 
 /*Form page styling*/
 fieldset {
-    margin-right: 80%;
+    margin-right: 80%; /*Adds a box around the form*/
 }
 
 textarea {
-    resize: none;
-}
-
-.aboveform {
-    font-size: 20px;
+    resize: none; /*Stops the user resizing the text box*/
 }
 
 
 /*Scroll button formatting*/
-#scrolltotopbutton {
+#scrolltotopbutton { /*Formats the button to send user to top of page*/
     display: none;
     position: fixed;
     bottom: 20px;
     right: 30px;
-    z-index: 99;
+    z-index: 99; /*Places the button above any future elements*/
     font-size: 22.5px;
     border: none;
     outline: none;
@@ -101,17 +96,17 @@ textarea {
     color: black;
     cursor: pointer;
     padding: 15px;
-    padding-bottom: 7px;
+    padding-bottom: 7px; /*Increases the padding forn the bottom only, to centralise the arrow*/
     border-radius: 4px;
 }
 
 #scrolltotopbutton:hover {
-    background-color: black;
+    background-color: black; /*Changes the background color to black when hovered on to show it is hovered on*/
     color: white;
 }
 
 /*Form formatting*/
 select option[value=""] {
-    display: none;
+    display: none; /*Hides the default options, which are used to show what each drop-down is for*/
 }
 
