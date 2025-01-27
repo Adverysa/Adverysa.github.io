@@ -1,61 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<meta name="viewport" content="widthe=device-width, initial-scale=1">
 <link rel="stylesheet" href="/CSS/styles.css"> <!-- imports the CSS file to centralise style management -->
 <link rel="icon" type="image/x-icon" href="/Images/logo1.jpg"> <!-- Shows the logo in the tab -->
+
 <head>
     <title>Contact Us</title>
+    <meta name="viewport" content="widthe=device-width, initial-scale=1"> <!-- Sets the viewport to the device width, to ensure page looks good on all devices -->  
 </head>
 
 <body>
-    <div class="topnav" id="topnavbar">
-    <a href="/index.html">Home</a>
-    <a href="/HTML/about.html">About</a>
-    <a href="/HTML/gallery.html">Gallery</a>
-    <a class="active" href="">Contact Us</a>
-    <a href="javascript:void(0);" class="icon" onclick="resizefunction()">
-        <i class="fa fa-bars"></i>
-    </a>
+    <div class="topnav" id="topnavbar"> <!-- Initialises the top nav bar -->
+        <a href="/index.html">Home</a>
+        <a href="/HTML/about.html">About</a>
+        <a href="/HTML/gallery.html">Gallery</a>
+        <a class="active" href="">Contact Us</a>
+        <a href="javascript:void(0);" class="icon" onclick="resizefunction()"> <!-- Adds the three line icon as a button, and sets the function it runs on click -->
+            <i class="fa fa-bars"></i>
+        </a>
 
-</div>
+    </div>
 
 
-<script>"centralisefiller()"</script>
-<form name="contactform" id="contactform" auto-complete="on" class="form">
-    <fieldset>
-        <legend class="aboveform">Send us a message</legend>
-    <label for="topic">Query topic:</label>
-    <select id="query" name="query" onchange="otherselectfunction()" required>
-        <option value="">- Topic -</option>
-        <option value="commission">Commissions</option>
-        <option value="purchase">Purchase</option>
-        <option value="tracking">Order tracking</option>
-        <option value="other">Other</option>
-    </select><br>
+    <script>"centralisefiller()"</script>
+    <form name="contactform" id="contactform" auto-complete="on" class="form">
+        <fieldset>
+            <legend class="aboveform">Send us a message</legend>
+            <label for="topic">Query topic:</label>
+            <select id="query" name="query" onchange="otherselectfunction()" required>
+                <option value="">- Topic -</option>
+                <option value="commission">Commissions</option>
+                <option value="purchase">Purchase</option>
+                <option value="tracking">Order tracking</option>
+                <option value="other">Other</option>
+            </select><br>
 
-    <div id="otherinfo" style="visibility: hidden;">Other: <input id="otherbox1" name="otherfield" type="text"></input></div>
-    
-        <label for="title">Title:</label>
-        <select id="title" name="title" required>
-            <option value="">- Title -</option>
-            <option value="Mr">Mr</option>
-            <option value="Mrs">Mrs</option>
-            <option value="Miss">Miss</option>
-            <option value="Ms">Ms</option>
-            <option value="other">Other</option>
-            <option value="prefer not to say">Prefer not to say</option>
-        </select><br>
-    
-    <label for="fname">Name:</label>
-    <input type="text" id="name" name="name" placeholder="Name" required><br>
-    <label for="email address"?=>Email address:</label>
-    <input type="email" id="email" name="email address" placeholder="Email address" required><br>
-    <label for="details">Message:</label><br>
-    <textarea id="details" name="details" rows="10" cols="31" placeholder="Enter message here" required></textarea><br>
-    <button onclick="validateform()" id="submitbutton" title="Submit form">Submit</button>
-    <input type="reset" value="Clear" title="Clear form" onclick="resetother()">
-</fieldset>
-</form>
+            <div id="otherinfo" style="visibility: hidden;">Other: <input id="otherbox1" name="otherfield"
+                    type="text"></input></div>
+
+            <label for="title">Title:</label>
+            <select id="title" name="title" required>
+                <option value="">- Title -</option>
+                <option value="Mr">Mr</option>
+                <option value="Mrs">Mrs</option>
+                <option value="Miss">Miss</option>
+                <option value="Ms">Ms</option>
+                <option value="other">Other</option>
+                <option value="prefer not to say">Prefer not to say</option>
+            </select><br>
+
+            <label for="fname">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Name" required><br>
+            <label for="email address" ?=>Email address:</label>
+            <input type="email" id="email" name="email address" placeholder="Email address" required><br>
+            <label for="details">Message:</label><br>
+            <textarea id="details" name="details" rows="10" cols="31" placeholder="Enter message here"
+                required></textarea><br>
+            <button onclick="validateform()" id="submitbutton" title="Submit form">Submit</button>
+            <input type="reset" value="Clear" title="Clear form" onclick="resetother()">
+        </fieldset>
+    </form>
 </body>
-<script src="/JS/code.js"></script>
+<script src="/JS/code.js"></script> <!-- Imports JS file to centralise JS code -->
+<script src="/JS/formcode.js"></script> <!-- Imports JS file for formn -->
 </html>
