@@ -3,6 +3,10 @@
 <link rel="stylesheet" href="/CSS/styles.css"> <!-- imports the CSS file to centralise style management -->
 <link rel="icon" type="image/x-icon" href="/Images/logo1.jpg"> <!-- Shows the logo in the tab -->
 
+<style>
+    textarea {resize: none;}
+</style>
+
 <head>
     <title>Contact Us</title>
     <meta name="viewport" content="widthe=device-width, initial-scale=1">
@@ -10,59 +14,51 @@
 </head>
 
 <body>
-    <div class="topnav" id="topnavbar"> <!-- Initialises the top nav bar -->
-        <a href="/index.html">Home</a>
-        <a href="/HTML/about.html">About</a>
-        <a href="/HTML/gallery.html">Gallery</a>
-        <a class="active" href="">Contact Us</a>
-        <a href="javascript:void(0);" class="icon" onclick="resizefunction()">
-            <!-- Adds the three line icon as a button, and sets the function it runs on click -->
-            <i class="fa fa-bars"></i>
-        </a>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md bg-light navbar-light py-3 sicky-top">
+        <div class="container">
+            <a href="/index.html" class="navbar-brand">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="/HTML/about.html" class="nav-link">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="/HTML/gallery.html" class="nav-link">Our Gallery</a>
+                    </li>
+                    <li class="navbar-nav">
+                        <a href="" class="nav-link">Contact us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<form autocomplete="on">
+    <div class="container">
+        <div class="mb-3 mt-1">
+            <label for="name" class="form-label">Name: </label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email: </label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email" aria-describedby="emailHelp" required>
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+            <label for="message" class="form-label">Message: </label>
+            <textarea class="form-control" id="message" rows="3" placeholder="Enter your message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
     </div>
-
-    <form class="contactform" name="contactform" id="contactform" auto-complete="on" class="form">
-
-        <fieldset>
-
-            <label for="title">Title:</label>
-            <select id="title" name="title" required>
-                <option value="">- Title -</option>
-                <option value="Mr">Mr</option>
-                <option value="Mrs">Mrs</option>
-                <option value="Miss">Miss</option>
-                <option value="Ms">Ms</option>
-                <option value="other">Other</option>
-                <option value="prefer not to say">Prefer not to say</option>
-            </select><br>
-
-            <legend class="aboveform">Send us a message</legend>
-            <label for="topic">Query topic:</label>
-            <select id="query" name="query" onchange="otherselectfunction()" required>
-                <option value="">- Topic -</option>
-                <option value="commission">Commissions</option>
-                <option value="purchase">Purchase</option>
-                <option value="packages">Packages</option>
-                <option value="other">Other</option>
-            </select><br>
-
-            <div id="otherinfo" style="display: none;">Topic: <input id="otherbox1" name="otherfield" type="text"
-                    placeholder="Type a subject"></input></div>
+</form>
 
 
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required><br>
-            <label for="email address" ?=>Email address:</label>
-            <input type="email" id="email" name="email address" placeholder="your@email.com" required><br>
-            <label for="details">Message:</label><br>
-            <textarea id="details" name="details" rows="10" cols="31" placeholder="Enter message here"
-                required></textarea><br>
-            <button id="submitbutton" title="Submit form">Submit</button>
-            <input type="reset" value="Clear" title="Clear form" onclick="resetother()">
-        </fieldset>
-    </form>
 </body>
 <script src="/JS/code.js"></script> <!-- Imports JS file to centralise JS code -->
 <script src="/JS/formcode.js"></script> <!-- Imports JS file for form -->
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script> <!-- Imports Bootstrap JS -->
 </html>
