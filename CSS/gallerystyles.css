@@ -1,17 +1,23 @@
 .row {
     display: flex;
     flex-wrap: wrap;
-    padding: 0;
+    padding: 0; /*Remove padding*/
+    min-height: 100%;
 }
 
 .column {
     flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
+    max-width: 25%; /*Sets equal columns up*/
+    padding: 5 100px;
+}
+
+.img-fluid {
+    width: 100%;
+    height: auto;
 }
 
 .column img {
-    margin-top: 8px;
+    padding-top:8px;
     vertical-align: middle;
     width: 100%;
 }
@@ -29,8 +35,4 @@
         flex: 100%;
         max-width: 100%;
     }
-}
-
-.gallery {
-    padding-bottom: 20px;
 }
