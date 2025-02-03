@@ -1,4 +1,5 @@
 /*External character sheet imports*/
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);/*For social media icons*/
 
 /*Section formatting*/
 body {
@@ -13,6 +14,33 @@ body {
     text-decoration-line: underline;
     font-weight: bold;
     font-size: 30px;
-    align-items: rows;
 }
 
+/*Footer formatting*/
+.footer-basic .social {
+    text-align: center; /*Center the social media icon*/
+}
+
+.footer-basic p {
+    text-align: center; /*Center the copyright text*/
+    font-size: 13.5px; /*Set the size of the text*/
+}
+
+.footer-basic .list-inline {
+    text-align: center; /*Centralise the page links*/
+    padding-bottom: 20px; 
+}
+
+.social a {
+    font-size:24px; /*Set the size of the icon*/
+    line-height: 20px; /*Set distance between icon and content above*/
+    text-align: center; /*Center the icon*/
+    color: inherit; /*Grey the icon*/
+    padding-bottom: 10px;
+    text-decoration: none; /*Remove the underline*/
+}
+
+.footer-basic .list-inline a {
+    color: inherit; /*Grey the icon*/
+    text-decoration: none; /*Remove the underline*/
+}
