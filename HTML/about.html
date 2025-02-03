@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="/CSS/aboutstyles.css"> <!-- imports the CSS file to centralise style management -->
-<link rel="stylesheet" href="/CSS/styles.css"> <!-- imports the CSS file to centralise style management -->
+<link rel="stylesheet" href="/CSS/aboutstyles.css"> <!-- Imports the CSS file to centralise style management -->
+<link rel="stylesheet" href="/CSS/styles.css"> <!-- Imports the CSS file to centralise style management -->
+<link rel="stylesheet" href="/CSS/gallerystyles.css"> <!-- Imports the CSS file to centralise style management -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 <!-- Import Bootstrap 5-->
@@ -39,21 +40,47 @@
 
     <!--About us text-->
     <section>
-        <h1 class="about-us-title">About us</h1>
-        <p class="about-us-text">Hi, we are a small photography studio, born out of a passion for beautiful views.<br>
-            We started posting on Instagram, in August of 2022.</p>
-        <p class="about-us-text"></p>
+        <div class="container">
+            <h1 class="about-us-title">About us</h1>
+            <p class="about-us-text">Hi, we are a small photography studio, born out of a passion for beautiful views.<br>
+                We started posting on Instagram, in August of 2022.</p>
+            <p class="about-us-text">We are based in the UK, and we love to travel and take photos of the beautiful
+                landscapes we see.</p>
+            <p class="about-us-text">We hope you enjoy our photos as much as we enjoy taking them.</p>
+            <p class="about-us-text">If you have any suggestions for places and things to photograph, send us a message through
+                <a href="/HTML/contact.html" class="link-no-show">our contact page</a>.</p>
+            <p class="about-us-text">Thank you for visiting our website.<br>And here are a few of our favourite photos so far:</p>
+            <div class="row">
+                <div class="column">
+                    <img src="/Images/Dark cabin with single light.jpg" alt="Dark cabin with a single light"
+                        class="img-fluid" title="Dark cabin with a single light">
+                    <img src="/Images/Trees reaching sky.jpg" alt="Trees reaching sky" class="img-fluid"
+                        title="Trees reaching sky">
+                </div>
+                <div class="column">
+                    <img src="/Images/Bridge with 2 figures.jpg" alt="Bridge with 2 figures in the foreground"
+                        class="img-fluid" title="Bridge with 2 figures in the foreground">
+                    <img src="/Images/Spindly tree at night.jpg" alt="Spindly tree at night" class="img-fluid"
+                        title="Spindly tree at night">
+                </div>
+                <div class="column">
+                    <img src="/Images/View out of focus through hole.jpg" alt="View out of focus through hole"
+                        class="img-fluid" title="View out of focus through hole">
+                    <img src="/Images/Rocky outcrops.jpg" alt="Rocky outcrops" class="img-fluid"
+                        title="Rocky outcrops">
+                </div>
+        </div>
     </section>
 
     <!-- Footer -->
         <div class="footer-basic">
             <footer>
                 <div class="social">
-                    <a href="https://www.instagram.com/ollies_camera_view/" class="fa fa-instagram"></a>
+                    <a href="https://www.instagram.com/ollies_camera_view/" class="fa fa-instagram" target="_blank"></a>
                 </div>
                 <ul class="list-inline">
                     <li class="list-inline-item"><a href="/index.html">Home</a></li>
-                    <li class="list-inline-item"><a href="/HTML/about.html">About us</a></li>
+                    <li class="list-inline-item"><a href="">About us</a></li>
                     <li class="list-inline-item"><a href="/HTML/gallery.html">Our Gallery</a></li>
                     <li class="list-inline-item"><a href="/HTML/contact.html">Contact us</a></li>
                     <p class="copyright">Ollie's Camera View © 2025</p>
