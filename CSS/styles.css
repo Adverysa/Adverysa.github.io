@@ -29,7 +29,12 @@ footer {
 }
 
 .link-no-show {
-    color: inherit;
+    color: #ac9fe5;
+    text-decoration: none;
+}
+
+.link-no-show:hover {
+    color: #dfdddd;
     text-decoration: underline;
 }
 
