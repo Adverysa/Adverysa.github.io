@@ -8,7 +8,7 @@
 .column {
     flex: 25%;
     max-width: 25%; /*Sets equal columns up*/
-    padding: 5 100px;
+    padding: 2px 10px; /*Adds padding to the columns*/
 }
 
 .img-fluid {
