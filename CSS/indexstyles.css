@@ -1,11 +1,15 @@
 section {
-    text-align: center;
+    text-align: center; /*Center the text*/
 }
 
 h1 {
-    font-size: 50px;
+    font-size: 50px; /*Set the font size to distinguish heading 1 from rest*/
+}
+
+h2 {
+    font-size: 40px; /*Set the font size to distinguish heading 2 from rest*/
 }
 
 p {
-    font-size: 25px;
+    font-size: 25px; /*Set the font size to distinguish paragraph from rest*/
 }

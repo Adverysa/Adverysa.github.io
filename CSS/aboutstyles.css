@@ -1,8 +1,8 @@
-.about-us-title {
-    text-decoration: underline;
-    text-align: center;}
+.about-us-title { /*Sets the style for the title of the about us page, so it is underlined and central*/
+    text-align: center;
+}
 
-.about-us-text {
+.about-us-text { /*Sets the style for the text of the about us page, so it is central and has a font size of 20px*/
     font-size: 20px;
     text-align: center;
 }

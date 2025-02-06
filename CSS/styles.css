@@ -1,41 +1,49 @@
 /*External character sheet imports*/
-@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css);/*For social media icons*/
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css); /*For social media icons*/
 
 /*Section formatting*/
+html {
+    scroll-behavior: smooth; /*Smooth scrolling when clicking on links*/
+}
+
+::-webkit-scrollbar{
+    width: 0; /*Remove the scrollbar*/
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     background-color: #121212; /*Set the background color to a slight shade of greay to ease reading*/
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+    min-height: 100vh; /*Set the minimum height of the page to 100% of the viewport height*/
+    display: flex; 
+    flex-direction: column; /*Set the main axis to be vertical*/
 }
 
 section {
-    flex-grow: 1; /*Set the main content to take up the remaining space*/
+    flex-grow: 1; /*Set the main content to take up the remaining space not filled by the body + navbar*/
 }
 
 footer {
-    margin-top: 10px;
+    margin-top: 10px; /*Set the margin at the top of the footer to 10px*/
 }
 
-
+h1 {
+    font-size: 50px; /*Set the font size to distinguish heading 1 from rest*/
+    text-align: center; /*Center the heading*/
+}
 /*Text class formatting*/
-.WIP { /*Used to signify that a page is not finished*/
-    color: red;
-    text-decoration-line: underline;
-    font-weight: bold;
-    font-size: 30px;
-}
-
 .link-no-show {
-    color: #ac9fe5;
-    text-decoration: none;
+    color: #ac9fe5; /*Set the color of the text to a shade of purple*/
+    text-decoration: none; /*Remove the underline*/
 }
 
 .link-no-show:hover {
-    color: #dfdddd;
-    text-decoration: underline;
+    color: #dfdddd; /*Set the color of the text to a shade of grey when hovered over*/
+    text-decoration: underline; /*Add an underline when hovered over*/
+}
+
+.nav-link .active {
+    color: #ac9fe5; /*Set the color of the active page to a shade of purple*/
 }
 
 /*Footer formatting*/
@@ -50,7 +58,7 @@ footer {
 
 .footer-basic .list-inline {
     text-align: center; /*Centralise the page links*/
-    padding-top: 10px; 
+    padding-top: 10px; /*Set the padding at the top of the page links to 10px*/
 }
 
 .social a {

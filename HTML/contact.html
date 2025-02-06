@@ -3,63 +3,70 @@
 <link rel="stylesheet" href="/CSS/styles.css"> <!-- imports the CSS file to centralise style management -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-<!-- Import Bootstrap 5-->
-<link rel="icon" type="image/x-icon" href="/Images/Main logo.jpg"><!-- Shows the logo in the tab -->
+<!-- Import Bootstrap 5 -->
+<link rel="icon" type="image/x-icon" href="/Images/Main logo.jpg"> <!-- Shows the logo in the tab -->
 
 <style>
     textarea {
-        resize: none;
+        resize: none; /*Prevents the user from resizing the textarea*/
     }
 </style>
 
 <head>
-    <title>Contact Us</title>
+    <title>Contact Us</title> <!-- Title of the page -->
     <meta name="viewport" content="widthe=device-width, initial-scale=1">
     <!-- Sets the viewport to the device width, to ensure page looks good on all devices -->
 </head>
 
-<body class="bg-dark">
+<body class="bg-dark text-light"> <!-- Sets the background colour to black and the text colour to white -->
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-md bg-dark navbar-dark py-3 sicky-top">
-        <div class="container">
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark py-3 sicky-top"> <!-- Set the navbar to expand once above 768 px wide
+        set the navbar to have a small amount of top padding, and stick at the top of the page when scrolling -->
+        <div class="container"> <!-- Container to hold the navbar -->
             <a href="/index.html" class="navbar-brand">Home</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">  <!-- Button to
+                toggle the navbar expanded version -->
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navmenu">
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav ms-auto"> <!-- Set the navbar to the right of the page -->
                     <li class="nav-item">
-                        <a href="/HTML/about.html" class="nav-link">About us</a>
+                        <a href="/HTML/about.html" class="nav-link">About us</a> <!-- Link for the about us page -->
                     </li>
                     <li class="nav-item">
-                        <a href="/HTML/gallery.html" class="nav-link">Our Gallery</a>
+                        <a href="/HTML/gallery.html" class="nav-link">Our Gallery</a> <!-- Link for the gallery page --> 
                     </li>
-                    <li class="navbar-nav">
-                        <a href="" class="nav-link">Contact us</a>
+                    <li class="nav-item">
+                        <a href="" class="nav-link active">Contact us</a> <!-- Text for the contact page -->
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Contact form -->
      <section>
-        <form autocomplete="on">
-            <div class="container">
+        <!-- Contact form -->
+        <form autocomplete="on" class="text-light"> <!-- Form for the contact page, allows autocomplete
+            and sets text to be white -->
+            <h1>Contact us</h1> <!-- Title for the contact form -->
+            <div class="container"> <!-- Container to hold the form -->
                 <div class="mb-3 mt-1">
-                    <label for="name" class="form-label">Name: </label>
-                    <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                    <label for="name" class="form-label">Name: </label> <!-- Label for the name input -->
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name" required> <!-- Input for the
+                        name, with placeholder text and required to be filled in -->
                 </div>
                 <div class="mb-3">
-                    <label for="email" class="form-label">Email: </label>
+                    <label for="email" class="form-label">Email: </label> <!-- Label for the email input -->
                     <input type="email" class="form-control" id="email" placeholder="Enter your email"
-                        aria-describedby="emailHelp" required>
-                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        aria-describedby="emailHelp" required> <!-- Input for the email, with placeholder text
+                        required to be filled in -->
+                    <div id="emailHelp" class="form-text text-light">We'll never share your email with anyone else.</div>
+                    <!-- Text to show we won't share emails with 3rd parties -->
                 </div>
                 <div class="mb-3">
-                    <label for="message" class="form-label">Message: </label>
+                    <label for="message" class="form-label">Message: </label> <!-- Label for the message input -->
                     <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"
-                        required></textarea>
+                        required></textarea> <!-- Textarea for the message, with placeholder text and required to be filled in -->
                 </div>
                 <button type="submit" class="btn btn-primary">Submit</button>
             </div>
@@ -67,20 +74,19 @@
     </section>
 
     <!-- Footer -->
-    <div class="footer-basic">
-        <footer class="bg-dark text-white">
-            <div class="social">
+    <div class="footer-basic"> 
+        <footer class="bg-dark text-light"> <!-- Sets background color to black and text color to white -->
+            <div class="social"> <!-- Link to social media account -->
                 <a href="https://www.instagram.com/ollies_camera_view/" class="fa fa-instagram" target="_blank"></a>
             </div>
-            <ul class="list-inline">
-                <li class="list-inline-item"><a href="/index.html">Home</a></li>
+            <ul class="list-inline"> <!-- Links to all webpages -->
+                <li class="list-inline-item"><a href="">Home</a></li>
                 <li class="list-inline-item"><a href="/HTML/about.html">About us</a></li>
                 <li class="list-inline-item"><a href="/HTML/gallery.html">Our Gallery</a></li>
-                <li class="list-inline-item"><a href="">Contact us</a></li>
-                <p class="copyright">Ollie's Camera View © 2025</p>
+                <li class="list-inline-item"><a href="/HTML/contact.html">Contact us</a></li>
+                <p class="copyright">Ollie's Camera View © 2025</p> <!-- Copyright message -->
         </footer>
     </div>
-
 </body>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"

@@ -14,10 +14,10 @@
     <!-- Sets the viewport to the device width, to ensure page looks good on all devices -->
 </head>
 
-<body class="bg-dark"> <!-- Set the background color to be dark -->
+<body class="bg-dark text-light"> <!-- Sets the background colour to black and the text colour to white -->
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-md navbar-dark py-3 sicky-top"> <!-- Navbar styling -->
-        <!-- Set the navbar to expand once above 768 px wide, set the navbar to have a small amount of top padding,  -->
+    <nav class="navbar navbar-expand-md navbar-dark py-3 sicky-top"> <!-- Set the navbar to expand once above 768 px wide
+        set the navbar to have a small amount of top padding, and stick at the top of the page when scrolling -->
         <div class="container">
             <a href="/index.html" class="navbar-brand">Home</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
@@ -26,7 +26,7 @@
             <div class="collapse navbar-collapse" id="navmenu">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a href="" class="nav-link">About us</a>
+                        <a href="" class="nav-link active">About us</a>
                     </li>
                     <li class="nav-item">
                         <a href="/HTML/gallery.html" class="nav-link">Our Gallery</a>
@@ -40,8 +40,8 @@
     </nav>
 
     <!--About us text-->
-    <section class="text-light">
-        <div class="container">
+    <section> <!-- Section for the about us text -->
+        <div class="container text-light">
             <h1 class="about-us-title">About us</h1>
             <p class="about-us-text">Hi, we are a small photography studio, born out of a passion for beautiful
                 views.<br>
@@ -79,17 +79,17 @@
     </section>
 
     <!-- Footer -->
-    <div class="footer-basic">
-        <footer class="bg-dark text-white">
-            <div class="social">
+    <div class="footer-basic"> 
+        <footer class="bg-dark text-light"> <!-- Sets background color to black and text color to white -->
+            <div class="social"> <!-- Link to social media account -->
                 <a href="https://www.instagram.com/ollies_camera_view/" class="fa fa-instagram" target="_blank"></a>
             </div>
-            <ul class="list-inline">
-                <li class="list-inline-item"><a href="/index.html">Home</a></li>
-                <li class="list-inline-item"><a href="">About us</a></li>
+            <ul class="list-inline"> <!-- Links to all webpages -->
+                <li class="list-inline-item"><a href="">Home</a></li>
+                <li class="list-inline-item"><a href="/HTML/about.html">About us</a></li>
                 <li class="list-inline-item"><a href="/HTML/gallery.html">Our Gallery</a></li>
                 <li class="list-inline-item"><a href="/HTML/contact.html">Contact us</a></li>
-                <p class="copyright">Ollie's Camera View © 2025</p>
+                <p class="copyright">Ollie's Camera View © 2025</p> <!-- Copyright message -->
         </footer>
     </div>
 </body>

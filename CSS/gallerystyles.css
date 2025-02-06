@@ -1,8 +1,8 @@
 .row {
-    display: flex;
-    flex-wrap: wrap;
+    display: flex; /*Sets the row to a flexbox*/
+    flex-wrap: wrap; /*Allows the columns to wrap when the screen is too small*/
     padding: 0; /*Remove padding*/
-    min-height: 100%;
+    min-height: 100%; /*Sets the minimum height of the row to 100%*/
 }
 
 .column {
@@ -12,17 +12,16 @@
 }
 
 .img-fluid {
-    width: 100%;
-    height: auto;
+    width: 95%; /*Sets the width of the image to 100% to fill the columns*/
+    height: auto; /*Sets the height of the image to auto to keep the aspect ratio*/
 }
 
 .column img {
-    padding-top:8px;
-    vertical-align: middle;
-    width: 100%;
+    padding-top:8px; /*Adds padding to the top of the image*/
+    width: 100%; /*Sets the width of the image to 100% to fill the columns*/
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 800px) { /*Sets the columns to 50% width when the screen is less than 800px, so only 2 columns show*/
     .column {
         flex: 50%;
         max-width: 50%;
@@ -30,16 +29,16 @@
     
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) { /*Sets the columns to 100% width when the screen is less than 600px, so only 1 column shows*/
     .column {
         flex: 100%;
         max-width: 100%;
     }
 }
 
-#scroll-to-top-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    display: none;
+#scroll-to-top-button { /*Styling for the scroll to top button*/
+    position: fixed; /*Sets the button so it stays in the same place regardless of scrolling*/
+    bottom: 20px; /*Sets the button 20px from the bottom of the page*/
+    right: 20px; /*Sets the button 20px from the right of the page*/
+    display: none; /*Hides the button until the user scrolls down*/
     }
