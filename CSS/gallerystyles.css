@@ -17,7 +17,7 @@
 }
 
 .column img {
-    padding-top:8px; /*Adds padding to the top of the image*/
+    padding-top: 8px; /*Adds padding to the top of the image*/
     width: 100%; /*Sets the width of the image to 100% to fill the columns*/
 }
 
