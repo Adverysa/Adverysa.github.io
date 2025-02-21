@@ -9,7 +9,7 @@ html {
 }
 
 ::-webkit-scrollbar{
-    width: 0; /*Remove the scrollbar*/
+    width: 0; /*Hide the scrollbar*/
 }
 
 body {
