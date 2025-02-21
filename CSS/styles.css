@@ -4,10 +4,8 @@
 /*Section formatting*/
 html {
     scroll-behavior: smooth; /*Smooth scrolling when clicking on links*/
-}
-
-::-webkit-scrollbar{
-    width: 0; /*Remove the scrollbar*/
+    max-width: 100%; /*Set the maximum width of the page to 100% of the viewport width*/
+    overflow-x: hidden; /*Hide the horizontal scrollbar*/
 }
 
 body {
@@ -31,6 +29,7 @@ h1 {
     font-size: 50px; /*Set the font size to distinguish heading 1 from rest*/
     text-align: center; /*Center the heading*/
 }
+
 /*Text class formatting*/
 .link-no-show {
     color: #ac9fe5; /*Set the color of the text to a shade of purple*/
